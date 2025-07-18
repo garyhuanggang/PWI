@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f4f8;
+}
+
+.app-container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+header {
+  text-align: center;
+}
+
+#cityInput {
+  padding: 8px;
+  width: 70%;
+  font-size: 16px;
+}
+
+button {
+  padding: 8px 12px;
+  font-size: 16px;
+  margin-left: 8px;
+}
+
+.hourly-scroll {
+  display: flex;
+  overflow-x: auto;
+  margin-top: 16px;
+  gap: 8px;
+}
+
+.hour-box {
+  background: white;
+  border-radius: 8px;
+  padding: 8px;
+  text-align: center;
+  min-width: 80px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.details, .weekly-forecast {
+  margin-top: 16px;
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.day-card {
+  border-bottom: 1px solid #ccc;
+  padding: 8px 0;
+}
+
+.pwi-high {
+  color: green;
+  font-weight: bold;
+}
+.pwi-medium {
+  color: goldenrod;
+  font-weight: bold;
+}
+.pwi-low {
+  color: red;
+  font-weight: bold;
+}

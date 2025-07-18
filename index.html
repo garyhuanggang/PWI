@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pickleball Weather Index</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>🏓 Pickleball Weather Index</h1>
+      <input type="text" id="cityInput" placeholder="Enter City (e.g., Naperville)" />
+      <button onclick="fetchWeather()">Check</button>
+    </header>
+    <div class="hourly-scroll" id="hourlyBar"></div>
+    <div class="details" id="detailsCard">
+      <canvas id="pwiChart" width="320" height="160"></canvas>
+      <div id="detailsContent"></div>
+    </div>
+    <div class="weekly-forecast" id="weeklyForecast"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
